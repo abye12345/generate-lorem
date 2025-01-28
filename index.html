@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum Generator</title>
+    <link rel="stylesheet" href="lorum.css" />
+  </head>
+  <body>
+    <h1>Lorem Ipsum Generator</h1>
+    <div class="one">
+      <div class="two">
+        <p>
+          <label for="paragraph-range"
+            >Paragraphs: <span id="paragraph-value">1</span></label
+          >
+        </p>
+        <div class="three">
+          <input type="range" id="paragraph-range" min="1" max="50" value="1" />
+        </div>
+
+        <p>
+          <label for="word-range"
+            >Words per Paragraph: <span id="word-value">1</span></label
+          >
+        </p>
+        <div class="three">
+          <input type="range" id="word-range" min="1" max="100" value="1" />
+        </div>
+        <p><label for="tag-select">Tag:</label></p>
+        <select class="four" id="tag-select">
+          <option value="p">p</option>
+          <option value="h1">h1</option>
+          <option value="h2">h2</option>
+          <option value="h3">h3</option>
+          <option value="h4">h4</option>
+          <option value="h5">h5</option>
+          <option value="h6">h6</option>
+          <option value="span">span</option>
+        </select>
+        <p><label for="html-select">Include HTML:</label></p>
+        <select class="four" id="html-select">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        <p>
+          <button class="five" id="generatebutton">Generate Lorem Ipsum</button>
+        </p>
+        <div id="lorem-output"></div>
+      </div>
+    </div>
+    <script src="lorum.js"></script>
+  </body>
+</html>

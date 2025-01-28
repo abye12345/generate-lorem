@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+}
+.one {
+  background-color: #cccccc6b;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.two {
+  background-color: white;
+  border: 2px solid white;
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.two p {
+  margin-bottom: 20px;
+}
+
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.three {
+  border: 2px solid #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.four {
+  cursor: pointer;
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.five {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.five:hover {
+  background-color: darkgreen;
+}
+
+#lorem-output {
+  margin-top: 20px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  height: auto;
+  min-height: 10vh;
+  padding: 20px;
+}
