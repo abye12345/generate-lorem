@@ -2,6 +2,10 @@
 
 A responsive web application that generates Lorem Ipsum text with customizable options.
 
+## Live Demo
+
+[View Live Demo](https://abye12345.github.io/generate-lorem/)
+
 ## Features
 
 - Generate customizable Lorem Ipsum text
