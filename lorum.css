@@ -1,80 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: sans-serif;
-  background-color: #f4f4f4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
 }
 
 h1 {
-  color: green;
+  color: #2c3e50;
   text-align: center;
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
 }
+
 .one {
-  background-color: #cccccc6b;
-  height: auto;
+  background-color: rgba(204, 204, 204, 0.1);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 .two {
   background-color: white;
-  border: 2px solid white;
-  width: 70%;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 800px;
   height: auto;
-  border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: 30px;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
 }
 
 .two p {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
 }
 
 input[type="range"] {
   width: 100%;
   cursor: pointer;
+  height: 8px;
+  -webkit-appearance: none;
+  background: #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #2c3e50;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .three {
-  border: 2px solid #ccc;
-  padding: 5px;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: #f8f9fa;
 }
 
 .four {
   cursor: pointer;
   width: 100%;
-  border: 2px solid #ccc;
-  padding: 8px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  font-size: 1rem;
+  color: #333;
 }
 
 .five {
   width: 100%;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: green;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #2c3e50;
   color: white;
-  font-size: 16px;
+  font-size: 1.1rem;
   cursor: pointer;
-  box-sizing: border-box;
-  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
 }
+
 .five:hover {
-  background-color: darkgreen;
+  background-color: #34495e;
 }
 
 #lorem-output {
-  margin-top: 20px;
-  border: 2px solid red;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-top: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f8f9fa;
   white-space: pre-wrap;
-  height: auto;
   min-height: 10vh;
-  padding: 20px;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .two {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .two p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .two {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .five {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
 }
